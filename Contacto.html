@@ -152,12 +152,17 @@
     <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
   </div>
     
-  <button type="submit" class="btn btn-primary">Enviar</button>
+  <button type="submit" class="btn btn-primary" id="btnEnviar">Enviar</button>
 </form>
 </div>
 
   
         <script>
+        $("#btnEnviar").on("click",function(){
+                
+               console.log("mensaje enviado correctamente");            
+                
+            });
             $("#botonLogin").on("click",function(){
                 
                 console.log("click");
