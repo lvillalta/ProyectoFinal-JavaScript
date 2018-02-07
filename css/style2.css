@@ -68,22 +68,22 @@ padding-left:0px;
 /*Divs para colocar cada producto en su sitio*/
 	#titulo1{
 		position:absolute;
-		top:45px;
+		top:90px;
 	}
 	
 	#titulo2{
 		position:absolute;
-		top:390px;
+		top:435px;
 	}
 	
 	#titulo3{
 		position:absolute;
-		top:735px;
+		top:780px;
 	}
 	
 	#titulo4{
 		position:absolute;
-		top:1080px;
+		top:1125px;
 	}
 	#div1{
 		position:absolute;
