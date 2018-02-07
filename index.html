@@ -49,8 +49,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
           <li><a href="#">Contacto</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Registrarse</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Acceder</a></li>
+          <button type="button" class="btn btn-link btn-lg glyphicon glyphicon-user" data-toggle="modal" data-target="#myModal1">Registro</button>
+          <button type="button" class="btn btn-link btn-lg glyphicon glyphicon-log-in" data-toggle="modal" data-target="#myModal2">Acceder</button>
           <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Carrito de compras</a></li>
         </ul>
       </div>
@@ -196,17 +196,15 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 
         
       
-<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Registro</button>      
-<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Login</button>      
 <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
+  <div class="modal fade" id="myModal1" role="dialog">
     <div class="modal-dialog">
     
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
+          <h4 class="modal-title">Registro</h4>
         </div>
         <div class="modal-body">
           <p>Some text in the modal.</p>
@@ -216,10 +214,30 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
-      
     </div>
   </div>
-      
+
+      <!-- Modal -->
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Login</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+            <img src="http://unsplash.s3.amazonaws.com/batch%209/barcelona-boardwalk.jpg" alt="Pasta and Wine" style="width:100%">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
       
       
 </body>
