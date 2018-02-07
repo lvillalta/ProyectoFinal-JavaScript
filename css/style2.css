@@ -187,9 +187,9 @@ padding-left:0px;
 	/*Div para los botones*/
 	#divbotones{
 		position:relative;
-		top:1050px;
+		top:1080px;
 		left:11px;
-		width:440px;
+		width:600px;
 		height:23px;
 	}
 
@@ -223,37 +223,44 @@ padding-left:0px;
 	/*Divs para la zona de compras*/
 	div.divZonaCompraSi{
 		position:relative;
-		top:1050px;
+		top:1100px;
 		padding:0px 11px 20px 11px;
 		display:yes;
-		width:693px;
+		width:820px;
 		height:auto;
-
-		background:#3c8c89;
+		 border-style: solid; border-width: 4px; 
+		 background-color:#D4C9C9; 
+	/*	background-color:#918585;*/
+/*		background:#3c8c89;*/
 	}
 	div.divZonaCompraNo{
+		border-style: solid; border-width: 4px; 
 		position:relative;
-		top:1050px;
+		top:1100px;
 		padding:0px 11px 20px 11px;
 		display:none;
-		width:693px;
+		width:820px;
 		height:385px;
-
-		background:#3c8c89;
+		background-color:#D4C9C9; 
+/*		background-color:#918585;*/
+		/*background:#3c8c89;*/
 	}
 
 	/*Divs del carrito y formularios*/
 	#divTotal{
-		background:#378582;
+/*		background:#378582;*/
+		background-color:#D4C9C9; 
 	}
 	#divDatos{
-		background:#378582;
+/*		background:#378582;*/
+		background-color:#D4C9C9; 
 	}
 
 	#divPago{
 		height: 150px;
 		padding-left:10px;
-		background:#378582;
+		background-color:#D4C9C9; 
+/*		background:#378582;*/
 	}
 	
 	#divDatosPersonales0 {
@@ -285,9 +292,9 @@ padding-left:0px;
 	
 /*CSS VALIDACION*/	
 	input.textBien {background:#d1fbe1;}
-	input.textMal {background:pink;}
+	input.textMal {background:red;}
 	select.textBien {background:#d1fbe1;}
-	select.textMal {background:pink;}	
+	select.textMal {background:red;}	
 	span.alertTipoDeTarjeta {color:red;}
 
 	

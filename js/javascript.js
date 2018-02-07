@@ -31,6 +31,7 @@
 		var DIVS = document.getElementsByName("DIVS");
 
 		for (i in productos){
+		//	DIVS[i].innerHTML = '<a id="imgG'+i+'" href="' +imgGrandes[i]+ '"><img id="imgP'+i+'" class="imagen" src="' +imgPeque[i]+ '"data-nam="img'+i+'" ></a><br><br><div class="etiquetas"><b><span id="pro'+i+'">' +productos[i]+ '</span>:&nbsp;<span id="pre'+i+'">' +precios[i]+ '€</span></b></div><div class="stock">Hay en stock <span id="uni'+i+'">' +stock[i]+ '</span> unidades,<br/>¿Cuantas quiere?: <input class="uniBien" type="number" id="uniUser'+i+'" name="uniUser" value="0" size="4" /><div><div class="slideShowButtons"><div data-idx='+i+'a class="slideButton"></div><div data-idx='+i+'b class="slideButton"></div><div data-idx='+i+'c class="slideButton"></div></div>';
 			DIVS[i].innerHTML = '<a id="imgG'+i+'" href="' +imgGrandes[i]+ '"><img id="imgP'+i+'" class="imagen" src="' +imgPeque[i]+ '"data-nam="img'+i+'" ></a><br><br><div class="etiquetas"><b><span id="pro'+i+'">' +productos[i]+ '</span>:&nbsp;<span id="pre'+i+'">' +precios[i]+ '€</span></b></div><div class="stock">Hay en stock <span id="uni'+i+'">' +stock[i]+ '</span> unidades,<br/>¿Cuantas quiere?: <input class="uniBien" type="number" id="uniUser'+i+'" name="uniUser" value="0" size="4" /><div><div class="slideShowButtons"><div data-idx='+i+'a class="slideButton"></div><div data-idx='+i+'b class="slideButton"></div><div data-idx='+i+'c class="slideButton"></div></div>';
 		}
 	
