@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	
+	<head>
+		<title>Carrito de compras</title>
+		
+		<!--lee codigo javascript-->
+		<script type="text/javascript" src="js/javascript.js"></script>
+			<!-- Importacion del jQuery -->
+		<script src="js/jquery.min.js"></script>
+
+		<!--lee codigo css-->
+		<link type="text/css" href="css/style2.css" rel="stylesheet" media="screen"/>
+
+
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <script src="js/bootstrap-modal.js"></script>
+
+	</head>
+
+
+	<body>
+		 <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">Sitio Web</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Inicio</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Catálogo <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Portálites</a></li>
+              <li><a href="#">Escritorio</a></li>
+              <li><a href="#">Celulares</a></li>
+              <li><a href="#">Accesorios</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <button type="button" class="btn btn-link btn-lg glyphicon glyphicon-user" data-toggle="modal" data-target="#myModal1">Registro</button>
+          <button type="button" class="btn btn-link btn-lg glyphicon glyphicon-log-in" data-toggle="modal" data-target="#myModal2">Acceder</button>
+          <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Carrito de compras</a></li>
+        </ul>
+      </div>
+    </nav>
+		<div id="todo" class="todoNo">
+			<div id="menu" class="menuNo">
+				<h2 id="titulo1">Portatiles</h2>
+				<!--Producto del 1 al 9-->
+				<div id="div1" name="DIVS"></div>
+				<div id="div2" name="DIVS"></div>
+				<div id="div3" name="DIVS"></div>
+				<h2  id="titulo2">Escritorio</h2>
+				<div id="div4" name="DIVS"></div>
+				<div id="div5" name="DIVS"></div>
+				<div id="div6" name="DIVS"></div>
+				<h2  id="titulo3">Celulares</h2>
+				<div id="div7" name="DIVS"></div>
+				<div id="div8" name="DIVS"></div>
+				<div id="div9" name="DIVS"></div>
+				<h2  id="titulo4">Accesorios</h2>
+				<div id="div10" name="DIVS"></div>
+				<div id="div11" name="DIVS"></div>
+				<div id="div12" name="DIVS"></div>
+				
+				<div class="container" align="center">		
+					<h1>Slideshow</h1>
+						<hr>
+						<div class="slideShow">
+						</div>
+				</div>
+
+				<!--Botones de compra-->
+				<div id="divbotones">
+					<input type="button" id="botonTotal" value="Calcular total"/>
+					<input type="button" id="botonDatos" value="Datos personales" disabled="disabled"/>
+					<input type="button" id="botonPago" value="Pago" disabled="disabled"/>
+					<input type="button" id="botonConfirmar" value="Confirmar pedido" disabled="disabled"/>
+				 </div>
+
+				
+				<!--zona de compra, tablas, formularios, etc.-->
+				<div id="divZonaCompra" class="divZonaCompraNo">
+
+				
+					<!--Carrito de la compra-->
+					<div id="divTotal" class="divsNo">
+						<p><b>Carrito de la compra, si quiere hacer alguna modificacion aun esta a tiempo:</b></p>
+						<table id="tablaTotal"></table>
+					</div>
+				
+				
+					<!--Datos personales-->				
+					<div id="divDatos" class="divsNo">
+						<p><b>Introduzca sus datos personales:</b></p>
+
+							<div id="divDatosPersonales0">
+								<div id="divDatosPersonales1">
+									<label>Nombre completo:</label><br/>
+									<input type="text" id="nombre" value="" size="26" /><br/>
+									
+									
+									<label>CI:</label><br/>
+									<input type="text" id="dni" value="" size="8" maxlength="9" /><br/>
+									
+									
+									<label>Fecha de nacimiento:</label><br/>
+									<select id="fechaNacimientoDia">
+										<option value="">&nbsp;dia&nbsp;</option>
+									</select>
+									<select id="fechaNacimientoMes">
+										<option value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mes</option>
+										<option value="1">Enero</option>
+										<option value="2">Febrero</option>
+										<option value="3">Marzo</option>
+										<option value="4">Abril</option>
+										<option value="5">Mayo</option>
+										<option value="6">Junio</option>
+										<option value="7">Julio</option>
+										<option value="8">Agosto</option>
+										<option value="9">Septiembre</option>
+										<option value="10">Octubre</option>
+										<option value="11">Noviembre</option>
+										<option value="12">Diciembre</option>
+									</select>			
+									<select id="fechaNacimientoAnio">
+										<option value="">&nbsp;&nbsp;año&nbsp;</option>
+									</select><br/>
+								</div>
+								
+								<div id="divDatosPersonales2">
+									<label>Telefono movil:</label><br/>
+									<input type="text" id="movil" value="" size="8" maxlength="9"/><br/>
+
+									<label>Email:</label><br/>
+									<input type="text" id="email1" value="" size="25" /><br/>
+									
+									<label>Repita el email:</label><br/>
+									<input type="text" id="email2" value="" size="25" />							
+								</div>
+							</div>
+
+							
+						<div id="divDomicilio">
+							
+							<label>Codigo Postal:</label>
+							<input type="text" id="codigoPostal" value="" size="5" maxlength="5"/>&nbsp;&nbsp;
+							
+							</select>
+						</div>								
+					</div>					
+					
+					
+					<!--Datos de pago-->
+					<div id="divPago" class="divsNo">
+						<p><b>Introduzca los datos de la tarjeta de credito/debito donde se cargara el cobro:</b></p>
+
+						
+						<label>Titular de la tarjeta:</label><br/>
+						<input type="text" id="titular" value="" size="26" /><br/>
+
+						
+						<div id="metodosDePago">
+							<label><span  id="alertTipoDeTarjeta">Tipo de tarjeta:</span></label><br/>
+							<label for="visa">
+								<input type="radio" id="visa" name="tarjetas" class="logoTarjetas" value="Visa">
+								<img src="img/pago/visa.gif"></img>
+							</label>
+							  
+							<label for="masterCard">
+								<input type="radio" id="masterCard" name="tarjetas" class="logoTarjetas" value="MasterCard">
+								<img src="img/pago/mastercard.gif"></img>
+							</label>
+							  
+							<label for="amex">
+								<input type="radio" id="amex" name="tarjetas" class="logoTarjetas" value="American Express">
+								<img src="img/pago/amex.gif"></img>
+							</label>
+							  
+							<label for="aurora">
+								<input type="radio" id="aurora" name="tarjetas" class="logoTarjetas" value="Aurora">
+								<img src="img/pago/aurora.gif"></img>
+							</label>
+					
+						</div>
+						
+						
+						<div id="divNumeroTarjeta">
+							<label>Número tarjeta y CVC:</label><br/>
+							<input type="text" id="numeroTarjeta" value="" size="15" maxlength="16" />
+							<input type="text" id="cvcTarjeta" value="" size="2" maxlength="3" /><br/>
+							
+							
+							<select id="mesTarjeta">
+								<option value="">&nbsp;&nbsp;mes&nbsp;</option>
+							</select>
+
+							<select id="anioTarjeta">
+								<option value="">&nbsp;&nbsp;año&nbsp;</option>
+							</select>
+						</div>
+					</div>						
+				</div>
+			</div>	
+		</div>
+		<p class="pie">Imagen de fondo propiedad de <a href="http://www.appinformatica.com/" target="_black">appinformatica</a></p>
+	</body>
+</html>
